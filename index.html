@@ -14,9 +14,9 @@
             height: 100vh;
             background-color: #fce4ec; /* Soft pembe */
             text-align: center;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Press Start 2P', cursive;
         }
-        h2 {
+        h2, .message {
             font-family: 'Press Start 2P', cursive;
             font-size: 16px;
             color: #d81b60;
@@ -28,7 +28,7 @@
             border-radius: 10px;
         }
         .message {
-            font-size: 24px;
+            font-size: 20px;
             margin-top: 20px;
             color: #333;
         }
@@ -69,7 +69,7 @@
     <input type="number" id="loveInput" min="0" max="100" placeholder="Bir sayı gir (0-100)">
     <button onclick="checkLove()">Gönder</button>
     <div class="message" id="resultMessage"></div>
-    <img id="resultImage" src="" style="display: none;" alt="Sonuç">
+    <img id="resultImage" src="https://i.postimg.cc/651xP2ZW/IMG-0265.png" style="display: none;" alt="Sonuç">
 
     <script>
         function checkLove() {
@@ -78,14 +78,14 @@
             let image = document.getElementById("resultImage");
 
             if (loveValue == 100) {
-                message.innerHTML = "He bana aşıksın yani! 😏💖🌸";
-                image.src = "https://i.imgur.com/oO3R3dD.png"; // Çiçek resmi
+                message.innerHTML = "HE BANA AŞIKSIN YANİ! 😏💖🌸";
+                image.src = "https://i.postimg.cc/T3zMRzQB/IMG-0268.png"; // Çiçek resmi
             } else if (loveValue >= 50) {
-                message.innerHTML = "He benden nefret ediyon yani! 😺";
-                image.src = "https://i.imgur.com/7fJtWIO.png"; // Nötr surat
+                message.innerHTML = "HE BENDEN NEFRET EDİYON YANİ! 😺";
+                image.src = "https://i.postimg.cc/P5pnnXbm/IMG-0267.png"; // Nötr surat
             } else {
-                message.innerHTML = "Moruk bak işine ya! 😒";
-                image.src = "https://i.imgur.com/3XlBndC.png"; // Üzgün surat
+                message.innerHTML = "MORUK BAK İŞİNE YA! 😒";
+                image.src = "https://i.postimg.cc/R0wrqgDh/IMG-0266.png"; // Üzgün surat
             }
             image.style.display = "block";
         }
